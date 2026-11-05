@@ -12,7 +12,17 @@ modules) with no dependencies, and run in the browser and in Node.
 The live sites use these exact files for computer opponents, hints, online tables (where the server is the authority)
 and tests. Each online site also has room codes for friends.
 
-## Use
+## Features
+
+- Pure functions on plain state objects: easy to test, to save, and to run on a server that sends each player only what
+  they may see.
+- Dou Dizhu: every combination type, call-and-rob bidding, spring and scoring. The computer plays as landlord or as a
+  farmer cooperating with its partner, and there is a Hint function.
+- Flying Chess: four players, take-off on 2/4/6, colour jumps, the shortcut flight, bumping, and three sixes in a row.
+- Animal Chess: the full Jungle rules and a three-level search computer.
+- 34 tests, including 500 complete computer games.
+
+## Quick start
 
 ```js
 import { deal, bid, play, readPlay } from './doudizhu/rules.js';
@@ -56,6 +66,8 @@ npm test    # 34 tests: every combination type, bidding paths, scoring and sprin
 ## 中文说明
 
 斗地主、飞行棋、斗兽棋的规则引擎和电脑玩家，纯 JavaScript，没有依赖，浏览器和 Node 都能用。
+
+快速开始：`git clone` 之后运行 `npm test` 跑全部测试，运行 `npm run example` 看三个电脑打一局斗地主。在自己的项目里直接 `import` 对应目录下的 `rules.js` 和 `ai.js` 就能用。
 
 - **斗地主：** 叫地主、抢地主，14 种牌型，春天和反春，计分规则齐全；电脑会规划手牌，农民之间会配合。
 - **飞行棋：** 起飞、同色跳格、飞跃捷径、撞机，进终点要点数正好。
