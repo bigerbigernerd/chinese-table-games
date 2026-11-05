@@ -1,0 +1,19 @@
+{
+  "name": "chinese-table-games",
+  "version": "1.0.0",
+  "description": "Rules engines and computer players for Dou Dizhu (斗地主), Flying Chess (飞行棋) and Animal Chess (斗兽棋) in plain JavaScript, no dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./doudizhu": "./doudizhu/rules.js",
+    "./doudizhu/ai": "./doudizhu/ai.js",
+    "./flying-chess": "./flying-chess/game.js",
+    "./flying-chess/board": "./flying-chess/board.js",
+    "./flying-chess/ai": "./flying-chess/ai.js",
+    "./animal-chess": "./animal-chess/rules.js",
+    "./animal-chess/ai": "./animal-chess/ai.js"
+  },
+  "scripts": { "test": "node --test", "example": "node examples/doudizhu-bots.mjs" },
+  "keywords": ["doudizhu", "dou-dizhu", "fight-the-landlord", "flying-chess", "aeroplane-chess", "ludo", "jungle", "dou-shou-qi", "animal-chess", "card-game", "board-game", "game-ai"],
+  "engines": { "node": ">=18" }
+}
